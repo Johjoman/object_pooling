@@ -55,9 +55,8 @@ public class Position {
     }
 
     public Position calculateNewPositionWithAngle(int stepSize) {
-        double newX = stepSize * Math.cos(direction);
-        double newY = stepSize * Math.sin(direction);
-
+        double newX = stepSize * Math.cos(Math.toRadians(direction));
+        double newY = stepSize * Math.sin(Math.toRadians(direction));
         return new Position((int)(x + newX), (int)(y + newY));
     }
 
