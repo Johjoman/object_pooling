@@ -1,5 +1,8 @@
 package position;
 
+/*
+* Position class developed by Joseph Nemeth and taken from another project.
+*/
 public class Position {
     private int x,y;
 
